@@ -82,7 +82,9 @@ def eval_detections(detections, scores, file_names, ground_truth_path):
     plt.ylabel('Precision')
     plt.title('All faces: average precision %.3f' % average_precision)
     plt.savefig('precizie_medie_all_faces.png')
-    plt.show()
+    # plt.show()
+    print('Task 1 - All faces: Average Precision = %.4f' % average_precision)
+    plt.close()
 
 def eval_detections_character(detections, scores, file_names,ground_truth_path,character):
     ground_truth_file = np.loadtxt(ground_truth_path, dtype='str')
@@ -137,7 +139,9 @@ def eval_detections_character(detections, scores, file_names,ground_truth_path,c
     plt.ylabel('Precision')
     plt.title(character + ' faces: average precision %.3f' % average_precision)
     plt.savefig('precizie_medie_' + character + '.png')
-    plt.show()
+    # plt.show()
+    print('Task 2 - %s: Average Precision = %.4f' % (character.capitalize(), average_precision))
+    plt.close()
 
 def evaluate_results_task1(solution_path,ground_truth_path,verbose = 0):
 
@@ -170,7 +174,7 @@ def evaluate_results_task2(solution_path,ground_truth_path,character, verbose = 
 verbose = 0
 
 #change this on your machine
-solution_path_root = "../fisiere_solutie/331_Alexe_Bogdan/"
+solution_path_root = "../../results/"
 ground_truth_path_root = "../../validare/"
 
 #task1
