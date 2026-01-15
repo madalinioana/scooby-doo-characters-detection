@@ -174,8 +174,11 @@ def evaluate_results_task2(solution_path,ground_truth_path,character, verbose = 
 verbose = 0
 
 #change this on your machine
-solution_path_root = "../../results/"
-ground_truth_path_root = "../../validare/"
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.join(script_dir, '..', '..')
+solution_path_root = os.path.join(project_root, "results") + "/"
+ground_truth_path_root = os.path.join(project_root, "validare") + "/"
 
 #task1
 solution_path = solution_path_root + "task1/"
