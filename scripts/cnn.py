@@ -14,7 +14,7 @@ ROOT_DIR = '/kaggle/input/scooby-doo-characters-detection'
 TRAIN_DIR = os.path.join(ROOT_DIR, 'antrenare')
 VAL_DIR = os.path.join(ROOT_DIR, 'validare', 'validare')
 OUTPUT_DIR = '/kaggle/working/cnn_results'
-MODEL_PATH = 'model_scooby.pth'
+MODEL_PATH = 'model_cnn.pth'
 
 CLASSES = ['daphne', 'fred', 'shaggy', 'velma']
 CLASS_TO_IDX = {cls: i for i, cls in enumerate(CLASSES)}

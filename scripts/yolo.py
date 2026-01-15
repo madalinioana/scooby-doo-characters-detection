@@ -129,7 +129,8 @@ def antreneaza_model():
     
     # salvam cel mai bun model
     best_path = model.trainer.best
-    model_dest = os.path.join(OUTPUT_DIR, 'model_yolo_best.pt')
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    model_dest = os.path.join(OUTPUT_DIR, 'model_yolo.pt')
     shutil.copy(best_path, model_dest)
     print(f"Model salvat la {model_dest}")
     

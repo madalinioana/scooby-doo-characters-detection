@@ -1,0 +1,11 @@
+
+    path: /kaggle/working/yolo_dataset
+    train: images/train
+    val: images/val
+    names:
+      0: daphne
+      1: fred
+      2: shaggy
+      3: velma
+      4: unknown
+    
