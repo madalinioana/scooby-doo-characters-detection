@@ -70,8 +70,8 @@ Results are saved in `yolo_results/task1/` and `yolo_results/task2/`.
 ├── antrenare/              # Training data
 ├── validare/               # Validation data
 ├── cnn_results/            # Results from CNN model
-│   ├── task1/             # All faces detections
-│   └── task2/             # Per-character detections
+│   ├── task1/              # All faces detections
+│   └── task2/              # Per-character detections
 ├── yolo_results/           # Results from YOLO model
 └── evaluare/               # Evaluation scripts
     └── cod_evaluare/
